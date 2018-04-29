@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Fizz and Buzz program method 2</title>
+        <meta charset = "utf-8"/>
+        <script>
+            //********FizzBuzz program***** 
+        //initialising the string which's going to take the value "Fizz" or "Buzz" at the end of the execution of the program    
+       var str = "";
+
+       //declare the parameter which's will represent the number to be checked
+       var i;
+
+        //defining the function fizzOrBuzz which returns the actual value of a number ie "Fizz", "Buzz", "FizzBuzz" or the number itself 
+        function fizzOrBuzz(i){
+            
+                if( i % 3 == 0 && i % 5 != 0){
+               str = "Fizz";
+               return str;
+            }
+            else if(i % 5 == 0 && i % 3 != 0){
+                str = "Buzz";
+               return str;
+            }
+           
+          else if(i % 3 == 0 && i % 5 == 0){
+
+                str = "FizzBuzz";
+               return str;
+           }
+           else{
+               return i;
+           }
+            
+        }
+
+    //loop to perform fizzOrBuzz function over 100 numbers
+    var fizzBuzz = "";
+    for(var a = 1; a <= 100; a++){
+
+         fizzBuzz += fizzOrBuzz(a) + ", ";
+    }
+    
+    console.log(fizzBuzz);
+
+        </script>
+    </head>
+</html>

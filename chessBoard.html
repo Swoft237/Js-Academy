@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Chess Board </title>
+        <meta charset="utf-8"/>
+        <script>
+            //program to print a chess board at the convenience of the user
+
+          //taking 'height' and 'width' of the chess board from the user
+          var width = prompt("enter the width of your chess board: ");
+
+          var height = prompt("enter the height of your chess board: ");
+          
+          //initialising 'symbol' with a sample of a row
+          var symbol = "# ".repeat(width);
+          
+
+//for loop to print 'symbol' according the chess board pattern
+for(var i = 0; i < height; i++){
+
+    if(i % 2 == 0){
+
+        var print = " " + symbol;
+        console.log(print);
+    } else{
+        console.log(symbol);
+    }
+}
+          
+        </script>
+    </head>
+</html>
