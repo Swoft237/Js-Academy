@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>
+        factorial of a number 
+    </title>
+    <meta charset="utf-8"/>
+    <script>
+      
+      var num;
+      function facto(a){
+
+
+        if( a < 0){
+
+            return "Sorry, the factorial of a negative number does not exist...";
+        }
+
+        else if( a == 0){
+
+            num = 1;
+            return num;
+        }
+         else{ 
+             
+             num = a * facto( a - 1);
+             return num;
+         } 
+           
+
+        
+      }
+
+console.log("The factoriel of negative thirty-four (-34) is : " + facto(-34));
+console.log("The factoriel of zero (0) is : " + facto(0));
+console.log("The factoriel of twenty (20) is : " + facto(20));
+    </script>
+</head>
+</html>
