@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="ceasarCipher.css" />
+
+    <script src="ceasarCipher.js"></script>
+
+</head>
+<body>
+  
+
+    <div id="container">
+
+        <h1 id="header">Caesar Cipher Service</h1>
+
+
+
+    Enter the plain text or your cipher:  
+
+    <input type="text"  id="message" > <br> <br>
+
+    Or pick a text file 
+
+    <input id="file" type="file" multiple onchange="startRead()">
+
+    <h3>Progress:</h3>
+    <div style="width:100%;height:20px;border:1px solid black;">
+    <div id="bar" style="background-image: url(encrypt1.jpeg);width:0px;height:20px;"></div>
+    </div>
+    <h3>File contents:</h3>
+    <pre>
+        <code id="output">
+        </code>
+    </pre>
+
+    <button onclick="encrypt(document.getElementById('message').value)"> Encrypt Text</button> 
+    <button onclick="decrypt(document.getElementById('message').value)"> Decrypt  Text</button>
+    <button onclick="encrypt(document.getElementsByTagName('pre')[0].textContent)"> Encrypt File </button> 
+    <button onclick="decrypt(document.getElementsByTagName('pre')[0].textContent)"> Decrypt File </button>
+   
+    <p id="print"> </p>
+
+    </p>
+
+    <p id="inputTextToSave"></p>
+
+</div>
+
+</body>
+</html>
