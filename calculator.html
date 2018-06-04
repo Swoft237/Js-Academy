@@ -1,0 +1,58 @@
+
+<!Doctype = html>
+<html>
+
+<head>
+    <title>Calculator interface </title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <meta charset="utf-8">
+    
+<body>
+
+       <div id="container">  
+
+<h1> <img src="#" alt="Swoft_237"> <br> <span id="index"> Calculator Interface </span> </h1>
+  <form action="#">
+      
+    <input type="text" size="18" id="d"  class="display">
+    
+      <input type="button" value="C"  onclick="document.getElementById('d').value = ''" class="clear operator">
+
+      <input type="button" value="<--" onclick='substring()' class="clear operator">
+
+     <br> <p class="keys"> 
+          <input type="button" value = "7" onclick='key(7)' class="button">
+          <input type="button" value = "8" onclick='key(8)' class="button">
+          <input type="button" value = "9" onclick='key(9)' class="button">
+          <input type="button" value = "/" onclick='key("/")' class="operator">
+          <input type="button" value = "X-M" onclick='print()' class="operator"><br>
+
+          <input type="button" value = "4" onclick='key(4)' class="button">
+          <input type="button" value = "5" onclick='key(5)' class="button">
+          <input type="button" value = "6" onclick='key(6)' class="button">
+          <input type="button" value = "X" onclick='key("*")' class="operator">
+          <input type="button" value = "RM" onclick='recall()' class="operator"><br>
+
+          <input type="button" value = "1" onclick='key(1)' class="button">
+          <input type="button" value = "2" onclick='key(2)' class="button">
+          <input type="button" value = "3" onclick='key(3)' class="button">
+          <input type="button" value = "-" onclick='key("-")' class="operator">
+          <input type="button" value = "M+" onclick='memory()' class="operator"><br>
+
+          <input type="button" value = "0" onclick='key(0)' class="button">
+          <input type="button" value = "+/-" onclick='key("-")' class="button">
+          <input type="button" value = "." onclick='key(".")' class="button">
+          <input type="button" value = "+" onclick='key("+")' class="operator">
+          <input type="button" value = "=" onclick='result()' class="operator"><br>
+    
+    
+    </p>
+
+      
+  </form>
+</div> 
+<script src="calculator.js">  </script>
+   
+    </body>
+</head>
+</html>
